@@ -144,6 +144,10 @@ aside {
   }
 
 /* align the cards for "projects" section into a flex wrap */
+#card1 {
+  width: 2000px;
+}
+
 
 .row {
     display: flex;
@@ -161,7 +165,8 @@ aside {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 var(--navlink-color);
     transition: 0.3s;
-    width: 30%;
+    width: 40%;
+    resize: none;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -221,12 +226,18 @@ differentiate between tablet and phone size */
       flex-direction: column;
       width: 100%;
     }
+
+
     h1 {
       font-size: 15vw;
+    }
+    h2 {
+      font-size: 6.5vw;
     }
     .card {
       flex: 0 0 50%;
       max-width: 100%;
+      resize: horizontal;
     }
 
     }
