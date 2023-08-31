@@ -31,9 +31,9 @@ Used W3 Schools (https://www.w3schools.com/)
 
 The following image demonstrates the web application's appearance:
 
-<img src='./assets/images/Screen Shot 2023-08-24 at 3.22.09 AM.png'
+<img src='./assets/css/photos/Screenshotofportfolio.png'
 
 This following is a link to the deployed application:
 
-(https://pauljsully.github.io/Mod1-Cleaning-up-code/)
+https://github.com/pauljsully/Paul-myPortfolio.git
 

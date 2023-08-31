@@ -165,7 +165,7 @@ aside {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 var(--navlink-color);
     transition: 0.3s;
-    width: 40%;
+    width: 35%;
     resize: none;
     justify-content: center;
     align-items: center;
