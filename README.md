@@ -35,5 +35,5 @@ The following image demonstrates the web application's appearance:
 
 This following is a link to the deployed application:
 
-https://github.com/pauljsully/Paul-myPortfolio.git
+https://pauljsully.github.io/Paul-myPortfolio/
 
