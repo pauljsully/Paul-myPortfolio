@@ -9,7 +9,7 @@ Solo project to develop a webpage to eventually house notable projects during my
 
 ## ReadME
 
-In this assignment I was able to identify non-semantic HTML (<div> and <span>) when necessary. Rearranged elements in the HTML and CSS code to follow a logical structure, which included headers and subsections. Added "alt" attribues to images. Lastly added a descriptive "title" element on line 9.
+In this assignment I was able to order HTML and CSS code to follow a logical structure, which included headers and subsections. 
 
 ## Notes
 
