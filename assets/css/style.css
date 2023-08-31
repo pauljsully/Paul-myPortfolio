@@ -64,6 +64,8 @@ webpage. circular border added*/
     border-radius: 50%;
  }
 
+ /* id for position of top-right image */
+
   #headshot {
     position: relative;
   }
@@ -143,11 +145,13 @@ aside {
     text-align: right;
   }
 
-/* align the cards for "projects" section into a flex wrap */
+/*makes first card larger than the others */
+
 #card1 {
   width: 2000px;
 }
 
+/* align the cards for "projects" section into a flex wrap */
 
 .row {
     display: flex;
