@@ -31,7 +31,7 @@ Used W3 Schools (https://www.w3schools.com/)
 
 The following image demonstrates the web application's appearance:
 
-<img src='./assets/css/photos/Screenshotofportfolio.png'
+<img src='./assets/css/photos/Screenshotofportfolio.png'>
 
 This following is a link to the deployed application:
 
