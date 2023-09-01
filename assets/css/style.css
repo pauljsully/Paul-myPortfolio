@@ -1,135 +1,135 @@
 /* create custom CSS variables (also called custom properties) 
 and apply them to the root of the page, making them accessible to all other CSS */
 :root {
-    /* declare a variable with `--` syntax */
-    --dark: #24134a;
-    --light: #fff;
-    --navlink-color: #464149;
-    --navlink-hover: #1f1b21;
-  }
+  /* declare a variable with `--` syntax */
+  --dark: #24134a;
+  --light: #fff;
+  --navlink-color: #464149;
+  --navlink-hover: #1f1b21;
+}
 
 
-  html {
-    font-size: 62%;
-  }
+html {
+  font-size: 62%;
+}
 
 
-  body {
-    /* Sans Serif font stack is implemented to help select 
-    the best font for each type of computer operating system */
+body {
+  /* Sans Serif font stack is implemented to help select 
+  the best font for each type of computer operating system */
 
-    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
-    monospace;
-  
-    /* set body font size to 1.75rem, which is 1.75x more 
-    than the font-size of 10px, making it 17.5px  */
+  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+  'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+  monospace;
 
-    font-size: 2rem;
-    line-height: 1.5;
-    color: var(--navlink-color);
+  /* set body font size to 1.75rem, which is 1.75x more 
+  than the font-size of 10px, making it 17.5px  */
 
-  }
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--navlink-color);
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8%;
-    background-image: linear-gradient(
-        rgba(232, 102, 236, 0.3) 2%,
-        rgba(39, 89, 120, 0.6) 100%
-      );
-    color: var(--navlink-color);
-    flex-grow: 1;
-  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8%;
+  background-image: linear-gradient(
+      rgba(232, 102, 236, 0.3) 2%,
+      rgba(39, 89, 120, 0.6) 100%
+    );
+  color: var(--navlink-color);
+  flex-grow: 1;
+}
 
 
 
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 
 
 /* this class gets the image into the top right part of the 
 webpage. circular border added*/
 
-  .topright {
-    position:absolute;
-    top: 20px;
-    right: -100px;
-    border-radius: 50%;
- }
+.topright {
+  position:absolute;
+  top: 20px;
+  right: -100px;
+  border-radius: 50%;
+}
 
- /* id for position of top-right image */
+/* id for position of top-right image */
 
-  #headshot {
-    position: relative;
-  }
+#headshot {
+  position: relative;
+}
 
 
 /*main/header parameters*/
 
-  main {
-    width: 90%;
-    margin: 4rem;
-    padding: 2px;
-  }
+main {
+  width: 90%;
+  margin: 4rem;
+  padding: 2px;
+}
 
-  h1 {
-    font-size: 10rem;
-    padding-right: 10px;
-    margin-left: 22px;
-  }
-  
-  h2 {
-    font-size: 2.7vw;
-  }
-  
-  h3 {
-    font-size: 1.8vw;
-    font-weight: normal;
-  }
-  
+h1 {
+  font-size: 10rem;
+  padding-right: 10px;
+  margin-left: 22px;
+}
+
+h2 {
+  font-size: 2.7vw;
+}
+
+h3 {
+  font-size: 1.8vw;
+  font-weight: normal;
+}
+
 
 
 /* navigation organization and design. hover over css */
 
 nav a {
-    background-color: unset;
-    color: var(--navlink-color);
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
+  background-color: unset;
+  color: var(--navlink-color);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 25px;
-    position: relative;
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
 }
-  
+
 nav a:hover {
-    color: var(--navlink-hover);
+  color: var(--navlink-hover);
 }
 
 /*navbar animation while hovering*/
 
 nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    width: 0%;
-    background-color: var(--navlink-hover);
-    position: absolute;
-    top: 0;
-    transition: all ease-in-out 200ms;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: var(--navlink-hover);
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 200ms;
 }
 nav a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 
@@ -137,114 +137,113 @@ nav a:hover::before {
 /* separate the h2 titles from the body with aside html/css */
 
 aside {
-    width: 25%;
-    padding-right: 15px;
-    margin-right: 50px;
-    margin: 1.5;
-    float: left;
-    text-align: right;
-  }
+  width: 25%;
+  padding-right: 15px;
+  margin-right: 50px;
+  margin: 1.5;
+  float: left;
+  text-align: right;
+}
 
 /*makes first card larger than the others */
 
 #card1 {
-  width: 2000px;
+width: 2000px;
 }
 
 /* align the cards for "projects" section into a flex wrap */
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 20px;
-    border-left: solid var(--navlink-color);
-    border-width: 5px;
-    margin: 30px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 20px;
+  border-left: solid var(--navlink-color);
+  border-width: 5px;
+  margin: 30px;
+}
+
 /*organize contents within cards */
 
 .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 var(--navlink-color);
-    transition: 0.3s;
-    width: 35%;
-    resize: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: flex-basis 500ms linear;
-    border-radius: 8px;
-    margin: 1.5rem;
-  }
-  /* On mouse-over, add a deeper shadow */
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 var(--navlink-color);
+  transition: 0.3s;
+  width: 170px;
+  resize: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: flex-basis 500ms linear;
+  border-radius: 8px;
+  margin: 1.5rem;
+}
+/* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 var(--dark);
-    cursor: pointer;
-    filter: brightness(70%);
-    transition: all 100ms ease;
-  }
+  box-shadow: 0 8px 16px 0 var(--dark);
+  cursor: pointer;
+  filter: brightness(70%);
+  transition: all 100ms ease;
+}
 
 /*image inside card sizing*/
 
 img {
-    border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .cardimg {
-    height: 158px;
-    width: 100%;
-    object-fit: cover;
+  height: 158px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*contact section and design*/
 
 #contact {
-    display: flex;
-    margin-left: 25px;
-    position: relative;
-    text-decoration: underline;
-    font-size: 1.75rem;
-    padding: 2%;
+  display: flex;
+  margin-left: 25px;
+  position: relative;
+  text-decoration: underline;
+  font-size: 1.75rem;
+  padding: 2%;
 }
 
 /*footer section and design*/
 
 footer {
-    text-align: center;
-    margin: 1.5rem;
-    background-image: linear-gradient(
-        rgba(232, 102, 236, 0.3) 2%,
-        rgba(39, 89, 120, 0.6) 100%
-      );
-    color: var(--navlink-color);
+  text-align: center;
+  margin: 1.5rem;
+  background-image: linear-gradient(
+      rgba(232, 102, 236, 0.3) 2%,
+      rgba(39, 89, 120, 0.6) 100%
+    );
+  color: var(--navlink-color);
 }
-  
+
 
 /* using a mobile-first approach, use `min-width` values 
 going from narrow -> wide for a responsive design. Parameter set to 
 differentiate between tablet and phone size */
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
-    header {
-      flex-direction: column;
-      width: 100%;
-    }
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
 
 
-    h1 {
-      font-size: 15vw;
-    }
-    h2 {
-      font-size: 6.5vw;
-    }
-    .card {
-      flex: 0 0 50%;
-      max-width: 100%;
-      resize: horizontal;
-    }
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 6.5vw;
+  }
+  .card {
+    flex: 0 0 50%;
+    max-width: 100%;
+    resize: horizontal;
+  }
 
-    }
-  
-  
-  
+  }
+
+
